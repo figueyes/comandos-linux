@@ -1,0 +1,105 @@
+#COMANDOS ESENCIALES LINUX
+#listar elementos de un directorio
+ls
+
+#añade carpetas y archivos ocultos
+ls -la
+
+#ir a una carpeta
+cd
+
+#ir a directorio anterior
+cd ..
+
+#crear directorio
+mkdir
+
+#remover directorio
+rmdir 
+
+#crear un fichero
+touch
+
+#remover archivo
+rm
+
+#mover ficheros de un directorio a otro
+mv dir dir2
+
+#renombar archivo
+rename
+
+#comando consulta al manual
+man comando
+
+#informacion del comando
+info comando
+
+#buscar contenido de la palabra indicada
+whatis comando
+
+#borrar pantalla
+clear
+
+#otorgar poderes de superusuario
+sudo
+su
+
+#mostrar historial de consultas de entrada
+history
+
+#nombre del directorio actual
+pwd
+
+#mostrar contenido de un fichero dado
+cat fichero.txt
+
+#===========================================
+<!-- PERMISOS 
+#cambiar permisos de acceso a los ficheros
+chmod
+
+<-- Grupos de permisos
+u -> usuario propietario
+g -> grupo
+o -> otro
+a -> todos los usuarios
+
+<-- Tipos de permisos
+r -> leer
+w -> escribir
+x -> ejecutar
+
+#EJEMPLO
+
+# Revocar permisos de lectura y escritura de un archivo
+
+chmod a -rw archivo
+
+#adicionar los permisos nuevamante
+
+chmod a +rw achivo
+
+#===========================================
+
+#Permisos y valores
+
+rw------- 600 : 
+rwx--x--x 711 : 
+rwxr-xr-x 755 : 
+rwxrwxrwx 777 :
+r-------- 400 :
+rw-r----- 640 :
+
+#===========================================
+
+#cambiar el usuario y grupo propietarios de ficheros
+chown user:group fichero
+
+#buscar directorio o fichero en el sistema de ficheros
+find
+
+#descarga el fichero o pagina dada, indicando URL
+wget URL
+
+#busca en uno o más ficheros una cadena determinada de texto. Si encuentra la cadena nos indica donde está. 
